@@ -1,0 +1,21 @@
+{
+  "name": "Cypress-Petclinic",
+  "version": "1.0.0",
+  "description": "Automated testing framework project with Cypress and Cucumber-BDD ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jérémy Dufour",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.6.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
