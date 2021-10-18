@@ -13,8 +13,6 @@ class VeterinariansPage {
 
         return cy.xpath(this.xpathTableVetsSpecialities).should('be.visible')
     }
-    
-    
-    }
+}
     
     export default VeterinariansPage;
