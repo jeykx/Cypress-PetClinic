@@ -1,11 +1,11 @@
-import HomePage from '../../pages/home';
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 import VeterinariansPage from '../../pages/veterinarians';
+import Common from '../../pages/common';
 
 Given('i am on the home page of the website petclinic', () => {
     
-    const home = new HomePage()
-    home.visit()
+    const common = new Common()
+    common.baseUrl()
 });
 
 When('click on the "veterinarians" link', () => {
