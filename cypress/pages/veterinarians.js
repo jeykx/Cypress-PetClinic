@@ -1,17 +1,19 @@
 class VeterinariansPage {
 
-    xpathLinkVet = '//span[contains(text(),"Veterinarians")]'
-    xpathTableVetsSpecialities = '//table[@id="vets"]'
+    elements = {
+
+        xpathLinkVet: () => cy.xpath('//span[contains(text(),"Veterinarians")]'),
+        xpathTableVetsSpecialities: () => cy.xpath('//table[@id="vets"]')
+    }
 
     clickLinkVeterinarians() {
       
-       
-       return cy.xpath(this.xpathLinkVet).click()
+       this.elements.xpathLinkVet().click()
     }
 
     assertVerifyVetsPage() {
 
-        return cy.xpath(this.xpathTableVetsSpecialities).should('be.visible')
+        this.elements.xpathTableVetsSpecialities().should('be.visible')
     }
 }
     

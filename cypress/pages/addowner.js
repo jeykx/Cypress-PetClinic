@@ -1,24 +1,29 @@
 class AddOwner {
 
-btnPageAddOwner = "//a[contains(text(),'Add Owner')]"
-btnAddOwnerValidate = "//button[contains(text(),'Add Owner')]"
-inputLocator = "input"
+  elements = {
+
+    btnPageAddOwner: () => cy.xpath('//a[contains(text(),"Add Owner")]'),
+    btnAddOwnerValidate: () => cy.xpath('//button[contains(text(),"Add Owner")]'),
+    inputLocator: () => cy.get('input')
+}
 
 linkAddOwner() {
-    cy.xpath(this.btnPageAddOwner).click()
+   
+    this.elements.btnPageAddOwner().click()
   }
 
 AddOwnerValidate() {
-    cy.xpath(this.btnAddOwnerValidate).click()
+
+    this.elements.btnAddOwnerValidate().click()
 }
 
 newOwnerForm(elements) {
 
-  cy.get(this.inputLocator).eq(0).type(elements.FIRSTNAME)
-  cy.get(this.inputLocator).eq(1).type(elements.LASTNAME)
-  cy.get(this.inputLocator).eq(2).type(elements.ADDRESS)
-  cy.get(this.inputLocator).eq(3).type(elements.CITY)
-  cy.get(this.inputLocator).eq(4).type(elements.TELEPHONE)
+  this.elements.inputLocator().eq(0).type(elements.FIRSTNAME)
+  this.elements.inputLocator().eq(1).type(elements.LASTNAME)
+  this.elements.inputLocator().eq(2).type(elements.ADDRESS)
+  this.elements.inputLocator().eq(3).type(elements.CITY)
+  this.elements.inputLocator().eq(4).type(elements.TELEPHONE)
 
   }
 

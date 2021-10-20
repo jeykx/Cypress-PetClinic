@@ -1,4 +1,17 @@
 {
   "testFiles": "**/*.feature",
-  "projectId": "v2g5jw"
+  "projectId": "v2g5jw",
+  "baseUrl": "https://spring-petclinic-community.herokuapp.com/",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
+
+  }
 }

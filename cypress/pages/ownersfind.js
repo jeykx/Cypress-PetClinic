@@ -1,18 +1,21 @@
 class OwnersFind {
 
-    ownersTableVerify = "//table[@id='vets']"
-    ownerInput= "input"
+    elements = {
+
+        ownersTableVerify: () => cy.xpath('//table[@id="vets"]'),
+        ownerInput: () => cy.get('input')
+    }
     
     ownersListVisible() {
         
-     cy.xpath(this.ownersTableVerify)
+     this.elements.ownersTableVerify()
      return true
 
     }
 
     ownerSearch(element) {
-
-    cy.get(this.ownerInput).type(element.lastname)
+        
+    this.elements.ownerInput().type(element.lastname)
 
     }
 

@@ -1,3 +1,4 @@
+@owners
 Feature: As a visitor to the website I can search for an owner by name to get access to this information
 
   Scenario: The website visitor can access the information sheet of an owner

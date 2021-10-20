@@ -8,10 +8,10 @@ Given('i am on the home page of the website', () => {
     common.baseUrl()
 });
 
-When('i click on the "find owners" link', () => {
+When('i click on the {string} link', (namesection) => {
     
     const common = new Common()
-    common.clickLinkFindOwners()
+    common.clickOnMenuTitle(namesection)
 });
 
 And('i click on the Find Owner button for access all owners', () => {

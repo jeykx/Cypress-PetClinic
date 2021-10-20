@@ -1,3 +1,4 @@
+@owners
 Feature: As a visitor to the website I can view the list of all owners to find the owner I want to contact
 
   Scenario: Visitors to the site can access the list of owners via the dedicated link in the navbar of the site
