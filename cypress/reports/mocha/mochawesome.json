@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-20T12:21:51.960Z",
-    "end": "2021-10-20T12:21:53.591Z",
-    "duration": 1631,
+    "start": "2021-10-20T18:50:43.874Z",
+    "end": "2021-10-20T18:50:47.388Z",
+    "duration": 3514,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,27 +18,27 @@
   },
   "results": [
     {
-      "uuid": "84314b39-fbc8-401c-93b0-8766cb8da594",
+      "uuid": "19768059-be7d-4268-a0e3-c9c3aa57520d",
       "title": "",
-      "fullFile": "cypress/integration/ownerinfos.feature",
-      "file": "cypress/integration/ownerinfos.feature",
+      "fullFile": "cypress/integration/addowner.feature",
+      "file": "cypress/integration/addowner.feature",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "fe6765de-a574-4720-ba98-01e1f1e0f65d",
-          "title": "As a visitor to the website I can search for an owner by name to get access to this information",
+          "uuid": "49047498-306d-428f-be25-93ebd975af5d",
+          "title": "As a visitor to the website i can add an owner to have access to this information",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "The website visitor can access the information sheet of an owner",
-              "fullTitle": "As a visitor to the website I can search for an owner by name to get access to this information The website visitor can access the information sheet of an owner",
+              "title": "user can add owner",
+              "fullTitle": "As a visitor to the website i can add an owner to have access to this information user can add owner",
               "timedOut": null,
-              "duration": 1593,
+              "duration": 3468,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "4f7e7121-c074-4986-8854-ef91847dec38",
-              "parentUUID": "fe6765de-a574-4720-ba98-01e1f1e0f65d",
+              "uuid": "52a134d3-54e8-4585-bdbd-1b04a4212b23",
+              "parentUUID": "49047498-306d-428f-be25-93ebd975af5d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4f7e7121-c074-4986-8854-ef91847dec38"
+            "52a134d3-54e8-4585-bdbd-1b04a4212b23"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1593,
+          "duration": 3468,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

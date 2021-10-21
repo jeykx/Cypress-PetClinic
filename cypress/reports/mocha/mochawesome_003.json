@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-20T18:51:04.696Z",
+    "end": "2021-10-20T18:51:09.826Z",
+    "duration": 5130,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "243b16bc-1450-48ab-86ae-5adbf1fd341b",
+      "title": "",
+      "fullFile": "cypress/integration/ownerslist.feature",
+      "file": "cypress/integration/ownerslist.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "effc1c8a-4400-4e60-8b6c-2ef0ff9c57ad",
+          "title": "As a visitor to the website I can view the list of all owners to find the owner I want to contact",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visitors to the site can access the list of owners via the dedicated link in the navbar of the site",
+              "fullTitle": "As a visitor to the website I can view the list of all owners to find the owner I want to contact Visitors to the site can access the list of owners via the dedicated link in the navbar of the site",
+              "timedOut": null,
+              "duration": 5074,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'find owners' within the element: <title> but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'find owners' within the element: <title> but never did.\n    at Common.clickOnMenuTitle (https://spring-petclinic-community.herokuapp.com/__cypress/tests?p=cypress\\integration\\ownerslist.feature:104:30)\n    at Context.eval (https://spring-petclinic-community.herokuapp.com/__cypress/tests?p=cypress\\integration\\ownerslist.feature:51:10)\n    at Context.resolveAndRunStepDefinition (https://spring-petclinic-community.herokuapp.com/__cypress/tests?p=cypress\\integration\\ownerslist.feature:10647:29)\n    at Context.eval (https://spring-petclinic-community.herokuapp.com/__cypress/tests?p=cypress\\integration\\ownerslist.feature:9968:35)",
+                "diff": null
+              },
+              "uuid": "a0a5a222-ca43-4bec-b817-a73de2896b94",
+              "parentUUID": "effc1c8a-4400-4e60-8b6c-2ef0ff9c57ad",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a0a5a222-ca43-4bec-b817-a73de2896b94"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5074,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

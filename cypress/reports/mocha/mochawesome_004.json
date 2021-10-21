@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-20T18:50:53.537Z",
-    "end": "2021-10-20T18:50:54.162Z",
-    "duration": 625,
+    "start": "2021-10-20T18:51:14.607Z",
+    "end": "2021-10-20T18:51:16.220Z",
+    "duration": 1613,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,27 +18,27 @@
   },
   "results": [
     {
-      "uuid": "09e7c550-0848-4274-93db-431f2de628b8",
+      "uuid": "78fc70b4-5ee0-4478-b896-e83b3ab21f6d",
       "title": "",
-      "fullFile": "cypress/integration/home.feature",
-      "file": "cypress/integration/home.feature",
+      "fullFile": "cypress/integration/veterinarianslist.feature",
+      "file": "cypress/integration/veterinarianslist.feature",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "53527116-a856-458c-b9a3-6d7a6893803d",
-          "title": "As an internet user I can access the website via a browser in order to benefit from these different services",
+          "uuid": "5dff9e86-ea94-4a61-8519-02dcdc269917",
+          "title": "As a visitor to the website I can access the list of veterinarians to view their information",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "The visitor accesses the website via the Google Chrome browser",
-              "fullTitle": "As an internet user I can access the website via a browser in order to benefit from these different services The visitor accesses the website via the Google Chrome browser",
+              "title": "The visitor can access the list of veterinarians through the dedicated link in the navbar of the site",
+              "fullTitle": "As a visitor to the website I can access the list of veterinarians to view their information The visitor can access the list of veterinarians through the dedicated link in the navbar of the site",
               "timedOut": null,
-              "duration": 591,
+              "duration": 1521,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "a6481f4a-c94f-41a6-8de1-fcd66b70e955",
-              "parentUUID": "53527116-a856-458c-b9a3-6d7a6893803d",
+              "uuid": "73877416-c845-44e2-8984-15d4ea2929ae",
+              "parentUUID": "5dff9e86-ea94-4a61-8519-02dcdc269917",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a6481f4a-c94f-41a6-8de1-fcd66b70e955"
+            "73877416-c845-44e2-8984-15d4ea2929ae"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 591,
+          "duration": 1521,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
