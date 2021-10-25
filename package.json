@@ -4,8 +4,10 @@
   "description": "Automated testing framework project with Cypress and Cucumber-BDD ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx cypress run --spec cypress/integration/*.feature",
+    "test-export": "npx cypress run --record --key e8354fb5-a398-43a2-8b78-d570a0e5ef73",
     "test:owners": "./node_modules/.bin/cypress-tags run -e TAGS=\"@owners\"",
+    "home-feature": "npx cypress run --spec cypress/integration/home.feature",
     "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
     "pretest": "npm run clean:reports",
     "scripts": "cypress run",

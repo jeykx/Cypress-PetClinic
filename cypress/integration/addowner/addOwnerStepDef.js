@@ -53,3 +53,41 @@ And('I check that the owner\'s information is displayed', () => {
     expect('0303030303').to.have.string('0303030303')
 
 });
+
+
+
+Given('i\'m on home page', () => {
+    
+    const common = new Common()
+    common.baseUrl()
+});
+
+And('click on the "find owners" link', () => {
+    
+    const common = new Common()
+    common.clickLinkFindOwners()
+});
+
+And('i click on the "Add Owner" button to access the form', () => {
+
+    const addowner = new AddOwner()
+    addowner.linkAddOwner()
+    
+});
+
+And('I fill form in the following {string} and {string} and {string} and {string} and {string}', (firstName, lastName, address, city, telephone) => {
+    
+    const addowner = new AddOwner()
+    addowner.inputFormOutline(firstName, lastName, address, city, telephone)
+});
+
+When('I click on the "Add Owner" button', () => {
+
+    const addowner = new AddOwner()
+    addowner.AddOwnerValidate()
+
+});
+
+Then('I\'am redirected on page with title Owner Information', () => {
+
+});

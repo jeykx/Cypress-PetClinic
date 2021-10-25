@@ -27,6 +27,16 @@ newOwnerForm(elements) {
 
   }
 
+  inputFormOutline(firstName, lastName, address, city, telephone) {
+
+  this.elements.inputLocator().eq(0).type(firstName)
+  this.elements.inputLocator().eq(1).type(lastName)
+  this.elements.inputLocator().eq(2).type(address)
+  this.elements.inputLocator().eq(3).type(city)
+  this.elements.inputLocator().eq(4).type(telephone)
+
+  }
+
 }
 
 export default AddOwner
